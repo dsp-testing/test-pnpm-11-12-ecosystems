@@ -4,4 +4,4 @@ catalog:
   lodash: 4.17.20
 catalogs:
   legacy:
-    chalk: 4.1.0
+    chalk: 6.0.1
