@@ -167,8 +167,8 @@ importers:
   .:
     dependencies:
       is-odd:
-        specifier: github:jonschlinkert/is-odd#3.0.0
-        version: https://codeload.github.com/jonschlinkert/is-odd/tar.gz/75e749a7926a3ae2dfd5b2eaab6d15956f73381a
+        specifier: github:jonschlinkert/is-odd#3.0.1
+        version: https://codeload.github.com/jonschlinkert/is-odd/tar.gz/a80ee0d831a8ee69f1fad5b4673491847975eb26
       lodash:
         specifier: 4.17.20
         version: 4.17.20
@@ -179,9 +179,9 @@ packages:
     resolution: {integrity: sha512-Wu1VHeILBK8KAWJUAiSZQX94GmOE45Rg6/538fKwiloUu21KncEkYGPqob2oSZ5mUT73vLGrHQjKw3KMPwfDzg==}
     engines: {node: '>=0.10.0'}
 
-  is-odd@https://codeload.github.com/jonschlinkert/is-odd/tar.gz/75e749a7926a3ae2dfd5b2eaab6d15956f73381a:
-    resolution: {gitHosted: true, integrity: sha512-VfI9Iy5d2z0iRBoyGy0mb/CBHWvY1KsAemr8+dAEvBjW1nnRRRt0cmoKHUFshqUo8T5vjqyPYhd2AwZu/+EIuQ==, tarball: https://codeload.github.com/jonschlinkert/is-odd/tar.gz/75e749a7926a3ae2dfd5b2eaab6d15956f73381a}
-    version: 3.0.0
+  is-odd@https://codeload.github.com/jonschlinkert/is-odd/tar.gz/a80ee0d831a8ee69f1fad5b4673491847975eb26:
+    resolution: {gitHosted: true, integrity: sha512-pXJHCg2xS2HlzHOpRWqFqkW4mvL/H+OylsfLIixcJ8J3ZSVfqSJgwGi/Nrkd3Q++v9keeo5AvnCrI3UpnV7vkg==, tarball: https://codeload.github.com/jonschlinkert/is-odd/tar.gz/a80ee0d831a8ee69f1fad5b4673491847975eb26}
+    version: 3.0.1
     engines: {node: '>=4'}
 
   lodash@4.17.20:
@@ -191,7 +191,7 @@ snapshots:
 
   is-number@6.0.0: {}
 
-  is-odd@https://codeload.github.com/jonschlinkert/is-odd/tar.gz/75e749a7926a3ae2dfd5b2eaab6d15956f73381a:
+  is-odd@https://codeload.github.com/jonschlinkert/is-odd/tar.gz/a80ee0d831a8ee69f1fad5b4673491847975eb26:
     dependencies:
       is-number: 6.0.0
 
