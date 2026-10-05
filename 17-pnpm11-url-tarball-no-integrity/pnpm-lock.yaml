@@ -9,25 +9,25 @@ importers:
   .:
     dependencies:
       lodash:
-        specifier: 4.17.20
-        version: 4.17.20
+        specifier: 4.18.1
+        version: 4.18.1
       xlsx:
         specifier: https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz
         version: https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz
 
 packages:
 
-  lodash@4.17.20:
-    resolution: {integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==}
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
 
   xlsx@https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz:
-    resolution: {tarball: https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz}
+    resolution: {integrity: sha512-+nKZ39+nvK7Qq6i0PvWWRA4j/EkfWOtkP/YhMtupm+lJIiHxUrgTr1CcKv1nBk1rHtkRRQ3O2+Ih/q/sA+FXZA==, tarball: https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz}
     version: 0.20.2
     engines: {node: '>=0.8'}
     hasBin: true
 
 snapshots:
 
-  lodash@4.17.20: {}
+  lodash@4.18.1: {}
 
   xlsx@https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz: {}
