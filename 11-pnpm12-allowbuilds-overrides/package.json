@@ -5,6 +5,6 @@
   "packageManager": "pnpm@12.9.1",
   "dependencies": {
     "esbuild": "0.19.0",
-    "is-odd": "3.0.0"
+    "is-odd": "3.0.1"
   }
 }
