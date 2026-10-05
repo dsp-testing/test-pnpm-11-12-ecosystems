@@ -1,0 +1,84 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/01-pnpm11-basic"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/02-pnpm11-workspace-settings"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/03-pnpm11-legacy-config"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/04-pnpm11-monorepo-named-catalogs"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/05-pnpm11-engines-only"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/06-pnpm12-basic"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/07-pnpm12-devengines"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/08-pnpm12-monorepo-catalog"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/09-pnpm12-min-release-age"
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 3
+  - package-ecosystem: "npm"
+    directory: "/10-pnpm12-git-dependency"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/11-pnpm12-allowbuilds-overrides"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/12-pnpm12-unrecognized-setting"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/13-pnpm12-self-switch-download"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/14-pnpm11-comment-only-workspace-yaml"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/15-pnpm11-settings-only-workspace-yaml"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/16-pnpm12-min-release-age-strict"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/17-pnpm11-url-tarball-no-integrity"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/18-pnpm11-runtime-pin"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/19-pnpm11-overrides-lockfile-mismatch"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/20-pnpm12-transitive-security"
+    schedule:
+      interval: "daily"
