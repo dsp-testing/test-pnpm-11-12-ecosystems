@@ -1,0 +1,9 @@
+{
+  "name": "pnpm12-self-switch-download",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@12.4.1",
+  "dependencies": {
+    "lodash": "4.17.20"
+  }
+}

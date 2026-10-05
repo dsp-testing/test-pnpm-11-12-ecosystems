@@ -1,0 +1,10 @@
+{
+  "name": "pnpm11-url-tarball-no-integrity",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.28.2",
+  "dependencies": {
+    "lodash": "4.17.20",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
+  }
+}

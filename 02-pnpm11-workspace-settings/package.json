@@ -1,0 +1,11 @@
+{
+  "name": "pnpm11-workspace-settings",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.28.2",
+  "dependencies": {
+    "esbuild": "0.19.0",
+    "is-odd": "3.0.0",
+    "lodash": "4.17.20"
+  }
+}

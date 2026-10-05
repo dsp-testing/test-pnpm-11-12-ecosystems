@@ -1,0 +1,7 @@
+packages:
+  - packages/*
+catalog:
+  lodash: 4.17.20
+catalogs:
+  legacy:
+    chalk: 4.1.0

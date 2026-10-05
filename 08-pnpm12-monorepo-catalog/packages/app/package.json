@@ -1,0 +1,9 @@
+{
+  "name": "@demo12/app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@demo12/lib": "workspace:*",
+    "prettier": "catalog:"
+  }
+}

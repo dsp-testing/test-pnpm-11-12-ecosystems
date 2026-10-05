@@ -1,0 +1,10 @@
+{
+  "name": "@demo11/app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@demo11/lib": "workspace:*",
+    "chalk": "catalog:legacy",
+    "lodash": "catalog:"
+  }
+}

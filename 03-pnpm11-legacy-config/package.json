@@ -1,0 +1,15 @@
+{
+  "name": "pnpm11-legacy-config",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.28.2",
+  "dependencies": {
+    "chalk": "4.1.0",
+    "is-odd": "3.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "is-number": "6.0.0"
+    }
+  }
+}

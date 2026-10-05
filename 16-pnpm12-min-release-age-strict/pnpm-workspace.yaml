@@ -1,0 +1,5 @@
+# 10 years: every lodash release newer than the locked 4.17.20 is "immature",
+# so with minimumReleaseAgeStrict any update needs approval (which --no-save blocks).
+minimumReleaseAge: 5256000
+minimumReleaseAgeStrict: true
+trustLockfile: true

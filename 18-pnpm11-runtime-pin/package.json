@@ -1,0 +1,16 @@
+{
+  "name": "pnpm11-runtime-pin",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.28.2",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": ">=26.0.0",
+      "onFail": "error"
+    }
+  },
+  "dependencies": {
+    "lodash": "4.17.20"
+  }
+}
