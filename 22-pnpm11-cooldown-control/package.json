@@ -1,0 +1,8 @@
+{
+  "name": "pnpm11-cooldown-control",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@aws-sdk/client-sqs": "3.1058.0"
+  }
+}

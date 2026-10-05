@@ -1,0 +1,14 @@
+{
+  "name": "pnpm11-legacy-field-cooldown-fail-open",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@aws-sdk/client-sqs": "3.1058.0"
+  },
+  "pnpm": {
+    "supportedArchitectures": {
+      "os": ["linux", "darwin"],
+      "cpu": ["x64", "arm64"]
+    }
+  }
+}

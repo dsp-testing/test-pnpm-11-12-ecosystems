@@ -1,0 +1,10 @@
+{
+  "name": "excl12-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@12.9.1",
+  "dependencies": {
+    "is-odd": "3.0.0",
+    "lodash": "4.17.20"
+  }
+}

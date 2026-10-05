@@ -82,3 +82,50 @@ updates:
     directory: "/20-pnpm12-transitive-security"
     schedule:
       interval: "daily"
+  # #14687: mirrors the customer's cooldown (7 days, semver-specific days 0)
+  - package-ecosystem: "npm"
+    directory: "/21-pnpm11-legacy-field-cooldown-fail-open"
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 7
+      semver-major-days: 0
+      semver-minor-days: 0
+      semver-patch-days: 0
+  - package-ecosystem: "npm"
+    directory: "/22-pnpm11-cooldown-control"
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 7
+      semver-major-days: 0
+      semver-minor-days: 0
+      semver-patch-days: 0
+  # #14634: standalone frontend excluded from the ancestor workspace, grouped
+  - package-ecosystem: "npm"
+    directories:
+      - "/23-pnpm11-excluded-standalone-dir"
+      - "/23-pnpm11-excluded-standalone-dir/frontend"
+    schedule:
+      interval: "daily"
+    groups:
+      all:
+        patterns: ["*"]
+  - package-ecosystem: "npm"
+    directories:
+      - "/24-pnpm12-excluded-standalone-dir"
+      - "/24-pnpm12-excluded-standalone-dir/frontend"
+    schedule:
+      interval: "daily"
+    groups:
+      all:
+        patterns: ["*"]
+  - package-ecosystem: "npm"
+    directories:
+      - "/25-pnpm10-excluded-standalone-dir"
+      - "/25-pnpm10-excluded-standalone-dir/frontend"
+    schedule:
+      interval: "daily"
+    groups:
+      all:
+        patterns: ["*"]

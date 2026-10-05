@@ -42,6 +42,18 @@ Each directory reproduces a high-volume pnpm failure seen in Sentry (`github/del
 | `19-pnpm11-overrides-lockfile-mismatch` ⚠️ | 11 | `overrides` in `pnpm-workspace.yaml` (`is-number: 7.0.0`) differ from the lockfile (`6.0.0`) | `ERR_PNPM_LOCKFILE_CONFIG_MISMATCH`. Verified locally with `--frozen-lockfile`. |
 | `20-pnpm12-transitive-security` | 12 | `express@4.17.1` → vulnerable `path-to-regexp@0.1.7`, `qs@6.7.0`, `send@0.17.1`, … | Transitive security updates under pnpm 12 (`ERR_PNPM_UPDATE_VERSION_ON_INDIRECT_DEP`). |
 
+## Support escalation reproductions (21–25)
+
+| Directory | pnpm | Setup | Escalation / what to look for |
+| --- | --- | --- | --- |
+| `21-pnpm11-legacy-field-cooldown-fail-open` ⚠️ | 11 (inferred) | No `packageManager`; legacy `pnpm.supportedArchitectures` in package.json; `@aws-sdk/client-sqs` 3.1058.0 (transitive deps publish almost daily); cooldown 7 days with semver days 0 | [#14687](https://github.com/github/dependabot-updates/issues/14687): `pnpm -v` prints a `[WARN] The "pnpm" field…` line before the version, so the log shows `Could not determine pnpm version` / `pnpm (unknown version) does not support minimumReleaseAge`. `--config.minimumReleaseAge` is then dropped and fresh transitive deps can land inside the cooldown. (`03` also triggers the warning.) |
+| `22-pnpm11-cooldown-control` | 11 (inferred) | Same as `21` without the legacy `pnpm` field | Control for `21`: pnpm commands should include `--config.minimumReleaseAge=10080`. |
+| `23-pnpm11-excluded-standalone-dir` | 11.28.2 | Root workspace `packages: ["packages/*"]`; standalone `frontend/` (own lockfile) not in the workspace; grouped multi-directory update | [#14634](https://github.com/github/dependabot-updates/issues/14634): `frontend/pnpm-lock.yaml` must change along with `frontend/package.json`. Locally pnpm 11 updates the frontend lockfile correctly. |
+| `24-pnpm12-excluded-standalone-dir` | 12.9.1 | Same as `23` | Same as `23` under pnpm 12. Works locally. |
+| `25-pnpm10-excluded-standalone-dir` ⚠️ | 10.34.4 | Same as `23`, the customer's pnpm version | Reproduces #14634 locally: pnpm 10 reports `Scope: all 2 workspace projects` and leaves `frontend/pnpm-lock.yaml` unchanged, which leads to `NoChangeError`. |
+
+The pnpm 12 binary download failure ([#14601](https://github.com/github/dependabot-updates/issues/14601)) is covered by `13`.
+
 ## Regenerating a lockfile
 
 ```sh
@@ -50,3 +62,4 @@ pnpm_config_manage_package_manager_versions=false pnpm install --lockfile-only -
 ```
 
 Re-apply the intentional breakage afterwards. In `12`, add the bad key after generating. In `16`, generate with `minimumReleaseAge: 0`. In `17`, strip `integrity`. In `18`, temporarily set `onFail: ignore`. In `19`, change the override after generating.
+For the `frontend/` lockfiles in `23`–`25`, run `pnpm install --lockfile-only --ignore-workspace`.
