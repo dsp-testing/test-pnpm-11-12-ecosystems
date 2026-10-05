@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@11.28.2",
   "dependencies": {
-    "chalk": "4.1.0",
+    "chalk": "6.0.1",
     "is-odd": "3.0.0"
   },
   "pnpm": {
