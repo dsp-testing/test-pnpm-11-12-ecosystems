@@ -15,8 +15,8 @@ importers:
         specifier: 0.19.0
         version: 0.19.0
       is-odd:
-        specifier: 3.0.0
-        version: 3.0.0
+        specifier: 3.0.1
+        version: 3.0.1
       lodash:
         specifier: 4.17.20
         version: 4.17.20
@@ -164,8 +164,8 @@ packages:
     resolution: {integrity: sha512-Wu1VHeILBK8KAWJUAiSZQX94GmOE45Rg6/538fKwiloUu21KncEkYGPqob2oSZ5mUT73vLGrHQjKw3KMPwfDzg==}
     engines: {node: '>=0.10.0'}
 
-  is-odd@3.0.0:
-    resolution: {integrity: sha512-204vE5IJ0Cd6pA6x1dMyLooGk6/xeKuq90imFuJN/ndMDBP4Sk9tJpBlTedHPvt6KDbtTDTsjVzzgctFqNV7FQ==}
+  is-odd@3.0.1:
+    resolution: {integrity: sha512-CQpnWPrDwmP1+SMHXZhtLtJv90yiyVfluGsX5iNCVkrhQtU3TQHsUWPG9wkdk9Lgd5yNpAg9jQEo90CBaXgWMA==}
     engines: {node: '>=4'}
 
   lodash@4.17.20:
@@ -266,7 +266,7 @@ snapshots:
 
   is-number@6.0.0: {}
 
-  is-odd@3.0.0:
+  is-odd@3.0.1:
     dependencies:
       is-number: 6.0.0
 
