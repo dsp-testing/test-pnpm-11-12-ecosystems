@@ -170,8 +170,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0
       lodash:
-        specifier: 4.17.20
-        version: 4.17.20
+        specifier: 4.18.1
+        version: 4.18.1
 
 packages:
 
@@ -183,8 +183,8 @@ packages:
     resolution: {integrity: sha512-204vE5IJ0Cd6pA6x1dMyLooGk6/xeKuq90imFuJN/ndMDBP4Sk9tJpBlTedHPvt6KDbtTDTsjVzzgctFqNV7FQ==}
     engines: {node: '>=4'}
 
-  lodash@4.17.20:
-    resolution: {integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==}
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
 
 snapshots:
 
@@ -194,4 +194,4 @@ snapshots:
     dependencies:
       is-number: 6.0.0
 
-  lodash@4.17.20: {}
+  lodash@4.18.1: {}
