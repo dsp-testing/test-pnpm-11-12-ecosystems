@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@12.9.1",
   "dependencies": {
-    "esbuild": "0.19.0",
+    "esbuild": "0.28.2",
     "is-odd": "3.0.0"
   }
 }
