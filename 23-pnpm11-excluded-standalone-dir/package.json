@@ -4,6 +4,6 @@
   "private": true,
   "packageManager": "pnpm@11.28.2",
   "dependencies": {
-    "is-odd": "3.0.0"
+    "is-odd": "3.0.1"
   }
 }
