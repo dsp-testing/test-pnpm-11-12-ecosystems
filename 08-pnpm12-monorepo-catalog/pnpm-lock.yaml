@@ -165,8 +165,8 @@ settings:
 catalogs:
   default:
     prettier:
-      specifier: 3.3.0
-      version: 3.3.0
+      specifier: 3.10.1
+      version: 3.10.1
 
 importers:
 
@@ -179,7 +179,7 @@ importers:
         version: link:../lib
       prettier:
         specifier: 'catalog:'
-        version: 3.3.0
+        version: 3.10.1
 
   packages/lib:
     dependencies:
@@ -197,8 +197,8 @@ packages:
     resolution: {integrity: sha512-204vE5IJ0Cd6pA6x1dMyLooGk6/xeKuq90imFuJN/ndMDBP4Sk9tJpBlTedHPvt6KDbtTDTsjVzzgctFqNV7FQ==}
     engines: {node: '>=4'}
 
-  prettier@3.3.0:
-    resolution: {integrity: sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==}
+  prettier@3.10.1:
+    resolution: {integrity: sha512-70vp3ZUYoPlFbF9uiTdXHUUCGEIp7d4+6p+8DYbkm2jP7x/3i/paXVF6dopSI3zd/CEitrZN1rc4i85xWmmXlg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -210,4 +210,4 @@ snapshots:
     dependencies:
       is-number: 6.0.0
 
-  prettier@3.3.0: {}
+  prettier@3.10.1: {}
